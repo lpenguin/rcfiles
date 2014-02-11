@@ -19,9 +19,10 @@ hardstatus alwayslastline
 # Very nice tabbed colored hardstatus line
 
 hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %H%{KW}|%{KY}%101`%{KW}|%D %M %d %Y%{= Kc} %C%A%{-}'
-
 # Hide hardstatus: ctrl-a f 
 bind f eval "hardstatus ignore"
 # Show hardstatus: ctrl-a F
 bind F eval "hardstatus alwayslastline"
+
+termcapinfo xterm|xterms|xs ti@:te=\E[2J
 
