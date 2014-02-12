@@ -4,3 +4,12 @@
 [submodule ".vim/bundle/tcomment"]
 	path = .vim/bundle/tcomment
 	url = https://github.com/vim-scripts/tComment.git
+[submodule ".vim/bundle/delmitmate"]
+	path = .vim/bundle/delmitmate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule ".vim/bundle/command-t"]
+	path = .vim/bundle/command-t
+	url = git://git.wincent.com/command-t.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar.git

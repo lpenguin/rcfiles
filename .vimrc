@@ -27,3 +27,6 @@ vnoremap <S-Tab> <gv
 
 nmap <C-b> gccj
 
+" CommandT
+noremap <leader>m <Esc>:CommandTBuffer<CR>
+
