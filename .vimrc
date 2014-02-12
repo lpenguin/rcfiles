@@ -25,8 +25,16 @@ inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-nmap <C-b> gccj
+nmap <C-b> gccj^
 
 " CommandT
 noremap <leader>m <Esc>:CommandTBuffer<CR>
+
+" Solarized color scheme
+set background=dark
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
 
