@@ -1,1 +1,1 @@
-. .bashrc.inc
+. $HOME/.bashrc.inc
