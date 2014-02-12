@@ -1,4 +1,4 @@
-attrcolor b ".I"
+# attrcolor b ".I"
 defutf8 on
 
 #bindkey "^[Od" prev  # change window with ctrl-left
@@ -12,7 +12,7 @@ bindkey ^[[1;5C next
 termcapinfo rxvt-unicode ti@:te@  
 startup_message off
 
-term screen-256color
+# term screen-256color
 vbell off
 defscrollback 30000
 hardstatus alwayslastline 
@@ -24,5 +24,5 @@ bind f eval "hardstatus ignore"
 # Show hardstatus: ctrl-a F
 bind F eval "hardstatus alwayslastline"
 
-termcapinfo xterm|xterms|xs ti@:te=\E[2J
+# termcapinfo xterm|xterms|xs ti@:te=\E[2J
 
