@@ -1,1 +1,2 @@
-. $HOME/.bashrc.inc
+echo '. $HOME/.bashrc.inc' >> $HOME/.bashrc
+
