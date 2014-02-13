@@ -4,7 +4,7 @@
 #
 # lpenguin
 
-echo "Syncing repo: pull ..."
+echo "Syncing repo: pull $1 $2 ..."
 git pull $1 $2
-echo "Syncing repo: push ..."
+echo "Syncing repo: push $1 $2 ..."
 git push $1 $2
