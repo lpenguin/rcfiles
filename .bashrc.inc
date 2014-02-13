@@ -1,6 +1,6 @@
 # some more ls aliases
-alias ls='ls --color=auto -lh --group-directories-first'
-alias ll='ls -alF'
+alias ls='ls --color=auto --group-directories-first'
+alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 

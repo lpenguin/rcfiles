@@ -9,4 +9,4 @@ cd $HOME
 git submodule init
 git submodule update
 
-
+chmod +x $HOME/bin/git-sync

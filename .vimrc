@@ -34,7 +34,8 @@ noremap <leader>m <Esc>:CommandTBuffer<CR>
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
+" let g:solarized_contrast="high"
+" let g:solarized_visibility="high"
 colorscheme solarized
 
+set guioptions-=T  "remove menu bar

@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# git-sync
+#
+# lpenguin
+
+echo "Syncing repo: pull ..."
+git pull $1 $2
+echo "Syncing repo: push ..."
+git push $1 $2
