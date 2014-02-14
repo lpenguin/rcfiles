@@ -29,13 +29,14 @@ nmap <C-b> gccj^
 
 " CommandT
 noremap <leader>m <Esc>:CommandTBuffer<CR>
+if has("gui_running")
+	" Solarized color scheme
+	set background=dark
+	let g:solarized_termtrans=1
+	let g:solarized_termcolors=256
+	" let g:solarized_contrast="high"
+	" let g:solarized_visibility="high"
+	colorscheme solarized
 
-" Solarized color scheme
-set background=dark
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-" let g:solarized_contrast="high"
-" let g:solarized_visibility="high"
-colorscheme solarized
-
-set guioptions-=T  "remove menu bar
+	set guioptions-=T  "remove menu bar
+endif
