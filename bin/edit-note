@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gvim $1
+git commit -am "commit $(date)"
+git sync
