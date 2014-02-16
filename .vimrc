@@ -40,3 +40,11 @@ if has("gui_running")
 
 	set guioptions-=T  "remove menu bar
 endif
+
+" TABS
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" let g:jedi#completions_command = "<M-Space>"
