@@ -15,7 +15,6 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
-
 " Отступы влево/вправо
 vnoremap > >gv
 vnoremap < <gv
@@ -60,4 +59,15 @@ Bundle 'majutsushi/tagbar'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/tComment'
 Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Yggdroot/indentLine'
+Bundle 'ervandew/supertab'
+Bundle 'klen/python-mode'
+
+" Python-mode
+let g:pymode_doc = 0
+let g:pymode_lint_checkers = ['pylint']
+let g:pymode_lint_ignore = "C"
+
+
 
