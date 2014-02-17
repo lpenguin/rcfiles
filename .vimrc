@@ -48,3 +48,16 @@ set shiftwidth=4
 set expandtab
 
 " let g:jedi#completions_command = "<M-Space>"
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'Raimondi/delimitMate'
+Bundle 'majutsushi/tagbar'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/tComment'
+Bundle 'gmarik/vundle'
+
