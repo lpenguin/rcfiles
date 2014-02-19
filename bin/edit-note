@@ -1,5 +1,6 @@
 #!/bin/bash
 
 gvim $1
+sleep 1
 git commit -am "commit $(date)"
 git sync
