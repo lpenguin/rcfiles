@@ -48,3 +48,36 @@ set shiftwidth=4
 set expandtab
 
 " let g:jedi#completions_command = "<M-Space>"
+set laststatus=2
+"PYTHONMODE
+
+" Включаем библиотеку Rope
+let g:pymode_rope = 1
+
+" Включаем linting
+let g:pymode_lint = 1
+
+" Какие ошибки подсвечивать
+let g:pymode_lint_checker = "pyflakes,pep8"
+
+" Отключаем надоедливое окно, отображающее ошибки и предупреждения
+let g:pymode_lint_cwindow = 0
+
+" Включаем поддержку virtualenv
+let g:pymode_virtualenv = 1
+
+" Подсветка синтаксиса и ошибок
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+" Отключаем фолдинг
+let g:pymode_folding = 0
+
+" Загружаем плагин для вставки брейкпоинтов
+let g:pymode_breakpoint = 1
+
+" По leader + e будет устанавливаться брейкпоинт
+let g:pymode_breakpoint_key = '<leader>e'
+imap <leader>c <C-R>=RopeCodeAssistInsertMode()<CR>
