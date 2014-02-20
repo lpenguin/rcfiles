@@ -69,5 +69,3 @@ let g:pymode_doc = 0
 let g:pymode_lint_checkers = ['pylint']
 let g:pymode_lint_ignore = "C"
 
-
-
