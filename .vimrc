@@ -53,7 +53,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Raimondi/delimitMate'
 Bundle 'majutsushi/tagbar'
 Bundle 'altercation/vim-colors-solarized'
@@ -62,6 +62,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Yggdroot/indentLine'
 Bundle 'ervandew/supertab'
 Bundle 'klen/python-mode'
+Bundle 'kien/ctrlp.vim'
 
 " Python-mode
 let g:pymode_doc = 0
