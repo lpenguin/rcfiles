@@ -6,6 +6,7 @@ filetype plugin indent on
 
 " Открыть/закрыть список тагов
 nmap <F8> :TagbarToggle<CR>
+nmap <F4> :NERDTreeToggle<CR>
 " Управление мышью
 :set mouse=a
 " Показывать номера строк
@@ -63,9 +64,51 @@ Bundle 'Yggdroot/indentLine'
 Bundle 'ervandew/supertab'
 Bundle 'klen/python-mode'
 Bundle 'kien/ctrlp.vim'
-
+Bundle 'mileszs/ack.vim'
+Bundle 'Lokaltog/vim-easymotion'
+"
 " Python-mode
 let g:pymode_doc = 0
 let g:pymode_lint_checkers = ['pylint']
 let g:pymode_lint_ignore = "C"
 
+""
+"" Searching
+""
+
+set hlsearch " highlight matches
+set incsearch " incremental searching
+set ignorecase " searches are case insensitive...
+set smartcase " ... unless they contain at least one capital letter
+
+""
+"" Wild settings
+""
+
+" TODO: Investigate the precise meaning of these settings
+set wildmode=list:longest,list:full
+"
+" Disable output and VCS files
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+
+" Disable archive files
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+
+" Ignore bundler and sass cache
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+
+" Ignore librarian-chef, vagrant, test-kitchen and Berkshelf cache
+set wildignore+=*/tmp/librarian/*,*/.vagrant/*,*/.kitchen/*,*/vendor/cookbooks/*
+
+" Ignore rails temporary asset caches
+set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*
+
+" Disable temp and backup files
+set wildignore+=*.swp,*~,._*
+
+"
+"" Backup and swap files
+"
+
+set backupdir^=~/.vim/_backup// " where to put backup files.
+set directory^=~/.vim/_temp// " where to put swap files.
