@@ -4,6 +4,6 @@ note=$HOME/Documents/notes/$1.markdown
 gvim -f $note
 directory=$(dirname $note)
 cd $directory
-sleep 3
+# sleep 3
 git commit -am "commit $(date)"
 git sync
