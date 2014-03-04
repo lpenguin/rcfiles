@@ -12,3 +12,5 @@ ec=$HOME/bin/edit-note.completition.sh
 if [[ -f $ec ]] ; then
     . $ec
 fi
+alias gs='git status'
+alias gc='git commit -a'

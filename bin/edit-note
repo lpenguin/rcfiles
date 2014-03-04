@@ -5,5 +5,6 @@ gvim -f $note
 directory=$(dirname $note)
 cd $directory
 # sleep 3
+git add $note
 git commit -am "commit $(date)"
 git sync
