@@ -66,6 +66,7 @@ Bundle 'klen/python-mode'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'elzr/vim-json'
 "
 " Python-mode
 let g:pymode_doc = 0
