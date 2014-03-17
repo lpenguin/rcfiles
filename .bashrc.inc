@@ -1,6 +1,6 @@
 # some more ls aliases
 alias ls='ls --color=auto --group-directories-first'
-alias ll='ls -alFh'
+alias ll='ls -lFh'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -14,3 +14,4 @@ if [[ -f $ec ]] ; then
 fi
 alias gs='git status'
 alias gc='git commit -a'
+alias extract='atool -x'
