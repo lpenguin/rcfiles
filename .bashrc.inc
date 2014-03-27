@@ -13,5 +13,8 @@ if [[ -f $ec ]] ; then
     . $ec
 fi
 alias gs='git status'
-alias gc='git commit -a'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gd='git diff'
+alias ga='git add'
 alias extract='atool -x'
